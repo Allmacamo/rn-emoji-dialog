@@ -18,8 +18,6 @@ class EmojiDialog extends React.Component<IEmojiDialogProps> {
 
    render() {
       const { emoji, title, message, visible } = this.props;
-      const Component = React.lazy(() => import(`../../assets/${'1f621.svg'}`));
-
       return (
          <Fragment>
             <View style={[styles.container, { display: visible ? 'flex' : 'none' }]}>
@@ -27,7 +25,7 @@ class EmojiDialog extends React.Component<IEmojiDialogProps> {
                   <LinearGradient start={{ x: 0.0, y: 1.0 }} end={{ x: 1.0, y: 0.0 }} colors={['#f2709c', '#ff9472']} style={[styles.gradientBg]}>
                      <View style={styles.emoji}>
                         <Suspense fallback={<View />}>
-                           <Component />
+                           <emoji.Component />
                         </Suspense>
                      </View>
                      <View style={styles.content}>
