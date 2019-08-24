@@ -9,7 +9,9 @@
         "jsx": "react-native",
         "esModuleInterop": true,
         "types": ["react", "react-native", "jest"],
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "noImplicitAny": false
     },
-    "include": ["src"],
     "exclude": ["node_modules", "**/__tests__/*"],
 }
