@@ -16,7 +16,6 @@ export default {
    } as ViewStyle,
    containerContent: {
       position: 'relative',
-      minHeight: 100,
       width: '75%',
       backgroundColor: 'white',
       borderRadius: borderRadius,
@@ -29,15 +28,28 @@ export default {
       shadowRadius: 2.27,
       elevation: 20,
    } as ViewStyle,
+   emoji: {
+      position: 'absolute',
+      left: '5%',
+      zIndex: 999,
+   } as ViewStyle,
    gradientBg: {
-      borderTopLeftRadius: borderRadius,
-      borderTopRightRadius: borderRadius,
+      position: 'relative',
+      borderRadius: borderRadius,
       paddingHorizontal: '5%',
-      paddingVertical: 35,
       flexDirection: 'row',
       justifyContent: 'space-between',
    } as ViewStyle,
-   emoji: {} as ViewStyle,
+   first: {
+      paddingVertical: 40,
+      borderBottomLeftRadius: 0,
+      borderBottomRightRadius: 0,
+   } as ViewStyle,
+   second: {} as ViewStyle,
+   third: {
+      paddingVertical: 40,
+   } as ViewStyle,
+   fourth: {} as ViewStyle,
    content: {
       justifyContent: 'center',
    } as ViewStyle,
@@ -47,10 +59,19 @@ export default {
    } as TextStyle,
    message: {
       color: 'rgba(255,255,255, .85)',
-      fontSize: 16,
+      fontSize: 14,
    } as TextStyle,
    buttons: {
-      paddingVertical: '5%',
       paddingHorizontal: '5%',
+      paddingVertical: '5%',
+      display: 'flex',
+      alignItems: 'flex-end',
    } as ViewStyle,
+   button: {
+      fontSize: 16,
+   } as TextStyle,
+   firstButton: {} as TextStyle,
+   secondButton: {} as TextStyle,
+   thirdButton: {} as TextStyle,
+   fourthButton: {} as TextStyle,
 };

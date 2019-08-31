@@ -4,6 +4,7 @@
         "ordered-imports": false,
         "member-access": false,
         "object-literal-sort-keys": false,
-        "object-literal-shorthand": false
+        "object-literal-shorthand": false,
+        "no-empty-interface": false
     }
 }
