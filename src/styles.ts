@@ -37,19 +37,11 @@ export default {
       position: 'relative',
       borderRadius: borderRadius,
       paddingHorizontal: '5%',
-      flexDirection: 'row',
+      flexDirection: 'column',
       justifyContent: 'space-between',
+      paddingTop: 40,
+      paddingBottom: 20,
    } as ViewStyle,
-   first: {
-      paddingVertical: 40,
-      borderBottomLeftRadius: 0,
-      borderBottomRightRadius: 0,
-   } as ViewStyle,
-   second: {} as ViewStyle,
-   third: {
-      paddingVertical: 40,
-   } as ViewStyle,
-   fourth: {} as ViewStyle,
    content: {
       justifyContent: 'center',
    } as ViewStyle,
@@ -62,16 +54,13 @@ export default {
       fontSize: 14,
    } as TextStyle,
    buttons: {
-      paddingHorizontal: '5%',
-      paddingVertical: '5%',
       display: 'flex',
-      alignItems: 'flex-end',
+      flexDirection: 'row',
+      justifyContent: 'flex-end',
+      width: '100%',
    } as ViewStyle,
    button: {
       fontSize: 16,
+      marginHorizontal: 5,
    } as TextStyle,
-   firstButton: {} as TextStyle,
-   secondButton: {} as TextStyle,
-   thirdButton: {} as TextStyle,
-   fourthButton: {} as TextStyle,
 };

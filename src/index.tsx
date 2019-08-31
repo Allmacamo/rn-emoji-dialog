@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { View, Text, Animated } from 'react-native';
+import { View, Text, Animated, Alert } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { IButton, IEmoji } from '../models';
 import styles from './styles';
 
 interface IEmojiDialogProps {
-   type: 'first' | 'second' | 'third' | 'fourth';
+   type: 'primary' | 'secondary';
    emoji: IEmoji;
    title?: string;
    message?: string;
@@ -21,26 +21,11 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
       super(props);
    }
 
-   getButtonStyle = () => {
-      switch (this.props.type) {
-         case 'first':
-            return styles.firstButton;
-         case 'second':
-            return styles.secondButton;
-         case 'third':
-            return styles.thirdButton;
-         case 'fourth':
-            return styles.fourthButton;
-         default:
-            return styles.firstButton;
-      }
-   };
-
    getButtons = () => {
       return this.props.buttons ? (
          <View style={styles.buttons}>
             {this.props.buttons.map((button: IButton) => (
-               <Text key={button.id} style={[styles.button, this.getButtonStyle()]} onPress={() => {}}>
+               <Text key={button.id} style={[styles.button]} onPress={button.onClick!}>
                   {button.text}
                </Text>
             ))}
@@ -52,7 +37,7 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
 
    render() {
       const { type, emoji, title, message, size, visible } = this.props;
-      const emojiSize = size ? size : 60;
+      const emojiSize = size ? size : 65;
 
       return (
          <React.Fragment>
@@ -64,20 +49,12 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
                            <emoji.Component height={emojiSize} width={emojiSize} />
                         </React.Suspense>
                      </View>
-                     <LinearGradient
-                        start={{ x: 0.0, y: 1.0 }}
-                        end={{ x: 1.0, y: 0.0 }}
-                        colors={emoji.colors}
-                        style={[styles.gradientBg, styles[type]]}
-                     >
+                     <LinearGradient start={{ x: 0.0, y: 1.0 }} end={{ x: 1.0, y: 0.0 }} colors={emoji.colors} style={[styles.gradientBg]}>
                         <View style={[styles.content]}>
                            <Text style={styles.title}>{title}</Text>
                            <Text style={styles.message}>{message}</Text>
                         </View>
-                        {type !== 'first' && type !== 'second' ? this.getButtons() : undefined}
                      </LinearGradient>
-
-                     {type === 'first' || type === 'second' ? this.getButtons() : undefined}
                   </View>
                </View>
             </Animated.View>
