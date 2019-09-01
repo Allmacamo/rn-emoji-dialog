@@ -1,3 +1,4 @@
+
 <p align="center">
   <a href="https://github.com/bozd4g/react-native-emoji-dialog">
     <img alt="react-native-emoji-dialog" src="https://raw.githubusercontent.com/bozd4g/react-native-emoji-dialog/master/assets/github/logo.png" width="500">
@@ -30,17 +31,47 @@ or
 $ yarn add react-native-emoji-dialog
 ```
 
+And add packages of **dependencies**
+```
+$ yarn add react-native-svg
+$ yarn add react-native-linear-gradient --dev
+$ yarn add react-native-svg-transformer --dev
+```
+
+Then, **link** these packages.
+```
+$ react-native link react-native-svg
+$ react-native link react-native-linear-gradient
+```
+
 ## Android
 ...
 
 ## iOS
 ...
 
+## Usage
+```js
+import EmojiDialog from 'react-native-emoji-dialog/';
+import { pouting } from 'react-native-emoji-dialog/emojis';
+
+<EmojiDialog
+    type="primary"
+    emoji={pouting}
+    title="Title"
+    message="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    button={{
+      id: 0,
+      text: 'okay!',
+      onClick: () => Alert.alert("Button clicked!"),
+    }}
+    visible />
+```
+
 ## Dependencies
 * [twemoji](https://github.com/twitter/twemoji)
 * [react-native-svg](https://www.npmjs.com/package/react-native-svg)
 * [react-native-svg-transformer](https://www.npmjs.com/package/react-native-svg-transformer)
-* [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
 * [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
 
 # License
