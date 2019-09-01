@@ -5,6 +5,7 @@
         "member-access": false,
         "object-literal-sort-keys": false,
         "object-literal-shorthand": false,
-        "no-empty-interface": false
+        "no-empty-interface": false,
+        "curly": false
     }
 }
