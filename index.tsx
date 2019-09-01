@@ -30,26 +30,6 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
       };
    }
 
-   getButtons = () => {
-      const buttonsContainer = this.props.type === 'primary' ? styles.primaryContainer : styles.secondaryContainer;
-      const buttonStyle = this.props.type === 'primary' ? styles.primaryButton : [styles.secondaryButton];
-      if (this.props.type === 'secondary') (buttonStyle as any).button = { color: this.props.emoji.colors[0], fontWeight: 'bold' } as TextStyle;
-
-      return this.props.button ? (
-         <View style={[styles.buttons, buttonsContainer]}>
-            <TouchableWithoutFeedback onPress={this.props.button!.onClick}>
-               <View style={[styles.button, buttonStyle]}>
-                  <Text key={this.props.button!.id} style={(buttonStyle as any).button} onPress={this.props.button!.onClick}>
-                     {this.props.button!.text}
-                  </Text>
-               </View>
-            </TouchableWithoutFeedback>
-         </View>
-      ) : (
-         undefined
-      );
-   };
-
    /***
     * TODO:
     * This function will be change with getDerivedStateFromProps
@@ -69,6 +49,26 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
          }),
       );
    }
+
+   private getButtons = () => {
+      const buttonsContainer = this.props.type === 'primary' ? styles.primaryContainer : styles.secondaryContainer;
+      const buttonStyle = this.props.type === 'primary' ? styles.primaryButton : [styles.secondaryButton];
+      if (this.props.type === 'secondary') (buttonStyle as any).button = { color: this.props.emoji.colors[0], fontWeight: 'bold' } as TextStyle;
+
+      return this.props.button ? (
+         <View style={[styles.buttons, buttonsContainer]}>
+            <TouchableWithoutFeedback onPress={this.props.button!.onClick}>
+               <View style={[styles.button, buttonStyle]}>
+                  <Text key={this.props.button!.id} style={(buttonStyle as any).button} onPress={this.props.button!.onClick}>
+                     {this.props.button!.text}
+                  </Text>
+               </View>
+            </TouchableWithoutFeedback>
+         </View>
+      ) : (
+         undefined
+      );
+   };
 
    render() {
       const { type, emoji, title, message, size, button, visible, onBackgroundClick } = this.props;

@@ -6,6 +6,7 @@
         "object-literal-sort-keys": false,
         "object-literal-shorthand": false,
         "no-empty-interface": false,
-        "curly": false
+        "curly": false,
+        "member-ordering": false
     }
 }
