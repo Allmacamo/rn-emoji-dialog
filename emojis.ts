@@ -1,5 +1,5 @@
 import React from 'react';
-import { IEmoji } from '../models';
+import { IEmoji } from './models';
 
 const pouting = {
    name: 'pouting',

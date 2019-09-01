@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View, Text, Animated, Alert, TextStyle, TouchableWithoutFeedback } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import { IButton, IEmoji } from '../models';
+import { IButton, IEmoji } from './models';
 import styles from './styles';
 
 interface IEmojiDialogProps {
