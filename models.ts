@@ -6,6 +6,6 @@ export interface IButton {
 
 export interface IEmoji {
    name: string;
-   Component: any;
+   content: any;
    colors: Array<string | number>;
 }

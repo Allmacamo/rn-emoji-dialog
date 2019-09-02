@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Animated, Alert, TextStyle, TouchableWithoutFeedback } from 'react-native';
+import { View, Text, Animated, TextStyle, TouchableWithoutFeedback, Image } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { IButton, IEmoji } from './models';
 import styles from './styles';
@@ -30,6 +30,26 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
       };
    }
 
+   getButtons = () => {
+      const buttonsContainer = this.props.type === 'primary' ? styles.primaryContainer : styles.secondaryContainer;
+      const buttonStyle = this.props.type === 'primary' ? styles.primaryButton : [styles.secondaryButton];
+      if (this.props.type === 'secondary') (buttonStyle as any).button = { color: this.props.emoji.colors[0], fontWeight: 'bold' } as TextStyle;
+
+      return this.props.button ? (
+         <View style={[styles.buttons, buttonsContainer]}>
+            <TouchableWithoutFeedback onPress={this.props.button!.onClick}>
+               <View style={[styles.button, buttonStyle]}>
+                  <Text key={this.props.button!.id} style={(buttonStyle as any).button} onPress={this.props.button!.onClick}>
+                     {this.props.button!.text}
+                  </Text>
+               </View>
+            </TouchableWithoutFeedback>
+         </View>
+      ) : (
+         undefined
+      );
+   };
+
    /***
     * TODO:
     * This function will be change with getDerivedStateFromProps
@@ -50,31 +70,15 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
       );
    }
 
-   private getButtons = () => {
-      const buttonsContainer = this.props.type === 'primary' ? styles.primaryContainer : styles.secondaryContainer;
-      const buttonStyle = this.props.type === 'primary' ? styles.primaryButton : [styles.secondaryButton];
-      if (this.props.type === 'secondary') (buttonStyle as any).button = { color: this.props.emoji.colors[0], fontWeight: 'bold' } as TextStyle;
-
-      return this.props.button ? (
-         <View style={[styles.buttons, buttonsContainer]}>
-            <TouchableWithoutFeedback onPress={this.props.button!.onClick}>
-               <View style={[styles.button, buttonStyle]}>
-                  <Text key={this.props.button!.id} style={(buttonStyle as any).button} onPress={this.props.button!.onClick}>
-                     {this.props.button!.text}
-                  </Text>
-               </View>
-            </TouchableWithoutFeedback>
-         </View>
-      ) : (
-         undefined
-      );
-   };
-
    render() {
       const { type, emoji, title, message, size, button, visible, onBackgroundClick } = this.props;
 
       const emojiSize = size ? size : 65;
-      const gradientStyle = button ? (type === 'primary' ? { paddingVertical: 15 } : { paddingBottom: 50 }) : { paddingBottom: 20 };
+      const gradientStyle = button
+         ? type === 'primary'
+            ? ({ paddingVertical: 15 } as TextStyle)
+            : ({ paddingBottom: 50 } as TextStyle)
+         : ({ paddingBottom: 20, fontSize: 17 } as TextStyle);
 
       return this.state.visible ? (
          <React.Fragment>
@@ -102,7 +106,7 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
                      <View style={styles.containerContent}>
                         <View style={[styles.emoji, { top: (emojiSize / 2) * -1 }]}>
                            <React.Suspense fallback={<View />}>
-                              <emoji.Component height={emojiSize} width={emojiSize} />
+                              <Image source={emoji.content} style={{ height: emojiSize, width: emojiSize }}></Image>
                            </React.Suspense>
                         </View>
                         <LinearGradient
