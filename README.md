@@ -6,7 +6,7 @@
 </p>
 
 <h1 align="center">
-  react-native-emoji-dialog [WIP]
+  react-native-emoji-dialog
 </h1>
 
 <p align="center">
