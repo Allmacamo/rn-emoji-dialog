@@ -31,16 +31,9 @@ or
 $ yarn add react-native-emoji-dialog
 ```
 
-And add packages of **dependencies**
+And add the **dependent** package and link this.
 ```
-$ yarn add react-native-svg
 $ yarn add react-native-linear-gradient --dev
-$ yarn add react-native-svg-transformer --dev
-```
-
-Then, **link** these packages.
-```
-$ react-native link react-native-svg
 $ react-native link react-native-linear-gradient
 ```
 
@@ -70,8 +63,6 @@ import { pouting } from 'react-native-emoji-dialog/emojis';
 
 ## Dependencies
 * [twemoji](https://github.com/twitter/twemoji)
-* [react-native-svg](https://www.npmjs.com/package/react-native-svg)
-* [react-native-svg-transformer](https://www.npmjs.com/package/react-native-svg-transformer)
 * [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
 
 # License
