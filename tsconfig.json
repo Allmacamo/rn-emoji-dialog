@@ -3,7 +3,7 @@
         "target": "es6",
         "module": "commonjs",
         "declaration": true,
-        "outDir": "./dist",
+        "outDir": ".",
         "strict": true,
         "lib": ["es2015"],
         "jsx": "react-native",
@@ -14,5 +14,4 @@
         "noImplicitAny": false
     },
     "exclude": ["node_modules", "**/__tests__/*"],
-    "include": ["."]
 }

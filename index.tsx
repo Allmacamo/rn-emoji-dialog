@@ -73,7 +73,7 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
    render() {
       const { type, emoji, title, message, size, button, visible, onBackgroundClick } = this.props;
 
-      const emojiSize = size ? size : 65;
+      const emojiSize = size ? size : 55;
       const gradientStyle = button
          ? type === 'primary'
             ? ({ paddingVertical: 15 } as TextStyle)

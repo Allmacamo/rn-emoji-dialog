@@ -1,9 +1,9 @@
 {
   "name": "react-native-emoji-dialog",
-  "version": "1.0.2",
+  "version": "1.0.8",
   "description": "A different dialog approach for React Native. This package provides you a different approach when you display a dialog in your Android & iOS application.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
@@ -38,7 +38,10 @@
   },
   "homepage": "https://github.com/bozd4g/react-native-emoji-dialog#readme",
   "files": [
-    "lib/**/*"
+    "*.d.ts",
+    "*.js",
+    "*.js.map",
+    "assets/png/**/*"
   ],
   "dependencies": {},
   "devDependencies": {
