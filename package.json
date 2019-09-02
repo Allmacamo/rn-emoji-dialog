@@ -1,7 +1,7 @@
 {
   "name": "react-native-emoji-dialog",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A different dialog approach for React Native. This package provides you a different approach when you display a dialog in your Android & iOS application.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
