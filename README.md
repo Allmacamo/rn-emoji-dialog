@@ -61,6 +61,8 @@ import { pouting } from 'react-native-emoji-dialog/emojis';
     visible />
 ```
 
+Click **[here](/EmojiList.md)** to see the full emoji list.
+
 ## Dependencies
 * [twemoji](https://github.com/twitter/twemoji)
 * [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
