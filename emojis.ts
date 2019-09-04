@@ -132,6 +132,120 @@ const pouting = {
    content: require('./assets/png/1f621.png'),
 } as IEmoji;
 
+const cryingFace = {
+   name: 'cryingFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f622.png'),
+} as IEmoji;
+
+const perseveringFace = {
+   name: 'perseveringFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f623.png'),
+} as IEmoji;
+
+const faceWithSteamFromNose = {
+   name: 'faceWithSteamFromNose',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f624.png'),
+} as IEmoji;
+
+const sadButRelievedFace = {
+   name: 'sadButRelievedFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f625.png'),
+} as IEmoji;
+
+const frowningFaceWithOpenMouth = {
+   name: 'sadButRelievedFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f626.png'),
+} as IEmoji;
+
+const anguishedFace = {
+   name: 'anguishedFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f627.png'),
+} as IEmoji;
+
+const fearfulFace = {
+   name: 'fearfulFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f628.png'),
+} as IEmoji;
+
+const wearyFace = {
+   name: 'wearyFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f629.png'),
+} as IEmoji;
+
+const anxiousFaceWithSweat = {
+   name: 'anxiousFaceWithSweat',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f630.png'),
+} as IEmoji;
+
+const faceScreamingInFear = {
+   name: 'faceScreamingInFear',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f631.png'),
+} as IEmoji;
+
+const astonishedFace = {
+   name: 'astonishedFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f632.png'),
+} as IEmoji;
+
+const flushedFace = {
+   name: 'flushedFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f633.png'),
+} as IEmoji;
+
+const sleepingFace = {
+   name: 'sleepingFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f634.png'),
+} as IEmoji;
+
+const dizzyFace = {
+   name: 'dizzyFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f635.png'),
+} as IEmoji;
+
+const faceWithoutMouth = {
+   name: 'faceWithoutMouth',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f636.png'),
+} as IEmoji;
+
+const faceWithMedicalMask = {
+   name: 'faceWithMedicalMask',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f637.png'),
+} as IEmoji;
+
+const grinningCatFaceWithSmilingEyes = {
+   name: 'grinningCatFaceWithSmilingEyes',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f638.png'),
+} as IEmoji;
+
+const catFaceWithTearsOfJoy = {
+   name: 'catFaceWithTearsOfJoy',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f639.png'),
+} as IEmoji;
+
+const wearyCatFace = {
+   name: 'wearyCatFace',
+   colors: ['#00c6ff', '#0072ff'],
+   content: require('./assets/png/1f640.png'),
+} as IEmoji;
+
 export {
    grinning,
    grinningWithSmilingEyes,
@@ -155,4 +269,23 @@ export {
    kissingFaceWithSmilingEyes,
    angryFace,
    pouting,
+   cryingFace,
+   perseveringFace,
+   faceWithSteamFromNose,
+   sadButRelievedFace,
+   frowningFaceWithOpenMouth,
+   anguishedFace,
+   fearfulFace,
+   wearyFace,
+   anxiousFaceWithSweat,
+   faceScreamingInFear,
+   astonishedFace,
+   flushedFace,
+   sleepingFace,
+   dizzyFace,
+   faceWithoutMouth,
+   faceWithMedicalMask,
+   grinningCatFaceWithSmilingEyes,
+   catFaceWithTearsOfJoy,
+   wearyCatFace,
 };
