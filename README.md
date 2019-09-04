@@ -60,8 +60,19 @@ import { pouting } from 'react-native-emoji-dialog/emojis';
     }}
     visible />
 ```
-
 Click **[here](/EmojiList.md)** to see the full emoji list.
+
+## Props
+| **Prop Name** | **Value Type** | **Description**
+| -- | -- | --
+| type | primary - secondary | It declares type of dialog
+| emoji | [IEmoji](models.ts) | An interface and it provides you variables of an emoji
+| message| string | It provides you give a message as content to dialog
+| size | number | Emoji's height and width
+| button | [IButton](models.ts) | An interface and it provides you variables of an your button
+| visible | boolean | It provides when you make dialog able to visible
+| colors | string[] - number[] | You can give to the background of dialog your custom colors as gradient
+| onBackgroundClick | void | You can control when clicked to background
 
 ## Dependencies
 * [twemoji](https://github.com/twitter/twemoji)
