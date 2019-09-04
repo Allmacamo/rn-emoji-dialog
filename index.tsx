@@ -12,6 +12,7 @@ interface IEmojiDialogProps {
    size?: number;
    button?: IButton;
    visible: boolean;
+   colors?: Array<string | number>;
    onBackgroundClick?(): void;
 }
 
@@ -33,7 +34,11 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
    getButtons = () => {
       const buttonsContainer = this.props.type === 'primary' ? styles.primaryContainer : styles.secondaryContainer;
       const buttonStyle = this.props.type === 'primary' ? styles.primaryButton : [styles.secondaryButton];
-      if (this.props.type === 'secondary') (buttonStyle as any).button = { color: this.props.emoji.colors[0], fontWeight: 'bold' } as TextStyle;
+      if (this.props.type === 'secondary')
+         (buttonStyle as any).button = {
+            color: this.props.colors ? this.props.colors[0] : this.props.emoji.colors[0],
+            fontWeight: 'bold',
+         } as TextStyle;
 
       return this.props.button ? (
          <View style={[styles.buttons, buttonsContainer]}>
@@ -71,7 +76,7 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
    }
 
    render() {
-      const { type, emoji, title, message, size, button, visible, onBackgroundClick } = this.props;
+      const { type, emoji, title, message, size, button, colors, onBackgroundClick } = this.props;
 
       const emojiSize = size ? size : 55;
       const gradientStyle = button
@@ -112,7 +117,7 @@ class EmojiDialog extends React.Component<IEmojiDialogProps, IEmojiDialogState> 
                         <LinearGradient
                            start={{ x: 0.0, y: 1.0 }}
                            end={{ x: 1.0, y: 0.0 }}
-                           colors={emoji.colors}
+                           colors={colors ? colors : emoji.colors}
                            style={[styles.gradientBg, gradientStyle]}
                         >
                            <View style={[styles.content]}>
