@@ -74,7 +74,7 @@ Click **[here](/EmojiList.md)** to see the full emoji list.
 | colors | string[] - number[] | You can give to the background of dialog your custom colors as gradient
 | onBackgroundClick | void | You can control when clicked to background
 
-## Dependencies
+## Development Dependencies
 * [twemoji](https://github.com/twitter/twemoji)
 * [react-native-linear-gradient](https://www.npmjs.com/package/react-native-linear-gradient)
 
