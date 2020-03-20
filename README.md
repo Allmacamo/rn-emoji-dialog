@@ -41,7 +41,12 @@ $ react-native link react-native-linear-gradient
 ...
 
 ## iOS
-...
+Install BVLinearGradient for UIManager as below.
+
+```
+$ cd projectName/ios
+$ pod install
+```
 
 ## Usage
 ```js
