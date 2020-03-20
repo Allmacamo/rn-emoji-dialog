@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://github.com/bozd4g/react-native-emoji-dialog">
-    <img alt="react-native-emoji-dialog" src="https://raw.githubusercontent.com/bozd4g/react-native-emoji-dialog/master/assets/github/logo.png" width="500">
+    <img alt="react-native-emoji-dialog" src="https://raw.githubusercontent.com/bozd4g/react-native-emoji-dialog/master/assets/github/logo.png" width="500" />
   </a>
 </p>
 
@@ -48,6 +48,13 @@ $ cd projectName/ios
 $ pod install
 ```
 
+<p align="center">
+  <a href="https://github.com/bozd4g/react-native-emoji-dialog">
+    <img alt="react-native-emoji-dialog" src="./assets/github/ios.png" width="300" style="margin: 0 15px; border-radius: 15px;" />
+    <img alt="react-native-emoji-dialog" src="./assets/github/ios2.png" width="300" style="margin: 0 15px; border-radius: 15px;" />
+  </a>
+</p>
+
 ## Usage
 ```js
 import EmojiDialog from 'react-native-emoji-dialog/';
@@ -68,16 +75,16 @@ import { pouting } from 'react-native-emoji-dialog/emojis';
 Click **[here](/EmojiList.md)** to see the full emoji list.
 
 ## Props
-| **Prop Name** | **Value Type** | **Description**
-| -- | -- | --
-| type | primary - secondary | It declares type of dialog
-| emoji | [IEmoji](models.ts) | An interface and it provides you variables of an emoji
-| message| string | It provides you give a message as content to dialog
-| size | number | Emoji's height and width
-| button | [IButton](models.ts) | An interface and it provides you variables of an your button
-| visible | boolean | It provides when you make dialog able to visible
-| colors | string[] - number[] | You can give to the background of dialog your custom colors as gradient
-| onBackgroundClick | void | You can control when clicked to background
+| **Prop Name**     | **Value Type**       | **Description**                                                         |
+| ----------------- | -------------------- | ----------------------------------------------------------------------- |
+| type              | primary - secondary  | It declares type of dialog                                              |
+| emoji             | [IEmoji](models.ts)  | An interface and it provides you variables of an emoji                  |
+| message           | string               | It provides you give a message as content to dialog                     |
+| size              | number               | Emoji's height and width                                                |
+| button            | [IButton](models.ts) | An interface and it provides you variables of an your button            |
+| visible           | boolean              | It provides when you make dialog able to visible                        |
+| colors            | string[] - number[]  | You can give to the background of dialog your custom colors as gradient |
+| onBackgroundClick | void                 | You can control when clicked to background                              |
 
 ## Development Dependencies
 * [twemoji](https://github.com/twitter/twemoji)
