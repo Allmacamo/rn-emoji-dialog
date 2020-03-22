@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/bozd4g/react-native-emoji-dialog">
-    <img alt="react-native-emoji-dialog" src="./assets/github/logo.png" width="500" />
+    <img alt="react-native-emoji-dialog" src="https://raw.githubusercontent.com/bozd4g/react-native-emoji-dialog/master/assets/github/logo.png" width="500" />
   </a>
 </p>
 
@@ -44,8 +44,8 @@ $ react-native link react-native-linear-gradient
 
 <p align="center">
   <a href="https://github.com/bozd4g/react-native-emoji-dialog">
-    <img alt="react-native-emoji-dialog" src="/assets/github/android.png" width="300" />
-    <img alt="react-native-emoji-dialog" src="./assets/github/android2.png" width="300" />
+    <img alt="react-native-emoji-dialog" src="https://raw.githubusercontent.com/bozd4g/react-native-emoji-dialog/master/assets/github/android.png" width="300" />
+    <img alt="react-native-emoji-dialog" src="https://raw.githubusercontent.com/bozd4g/react-native-emoji-dialog/master/assets/github/android2.png" width="300" />
   </a>
 </p>
 
@@ -60,8 +60,8 @@ $ pod install
 
 <p align="center">
   <a href="https://github.com/bozd4g/react-native-emoji-dialog">
-    <img alt="react-native-emoji-dialog" src="/assets/github/ios.png" width="300" />
-    <img alt="react-native-emoji-dialog" src="./assets/github/ios2.png" width="300" />
+    <img alt="react-native-emoji-dialog" src="https://raw.githubusercontent.com/bozd4g/react-native-emoji-dialog/master/assets/github/ios.png" width="300" />
+    <img alt="react-native-emoji-dialog" src="https://raw.githubusercontent.com/bozd4g/react-native-emoji-dialog/master/assets/github/ios2.png" width="300" />
   </a>
 </p>
 

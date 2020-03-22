@@ -1,63 +1,63 @@
 {
-  "name": "react-native-emoji-dialog",
-  "version": "2.0.0",
-  "description": "A different dialog approach for React Native. This package provides you a different approach when you display a dialog in your Android & iOS application.",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest --config jestconfig.json",
-    "lint": "tslint -p tsconfig.json",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bozd4g/react-native-emoji-dialog.git"
-  },
-  "keywords": [
-    "react native",
-    "react native emoji",
-    "native emoji dialog",
-    "android emoji dialog",
-    "ios emoji dialog",
-    "emoji alert"
-  ],
-  "author": {
-    "name": "Furkan Bozdag",
-    "email": "furkan@bozdag.dev",
-    "url": "https://github.com/bozd4g"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bozd4g/react-native-emoji-dialog/issues"
-  },
-  "homepage": "https://github.com/bozd4g/react-native-emoji-dialog#readme",
-  "files": [
-    "*.d.ts",
-    "*.js",
-    "*.js.map",
-    "assets/png/**/*"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "jest": "^24.8.0",
-    "@types/jest": "^24.0.15",
-    "@types/react": "^16.9.2",
-    "@types/react-native": "^0.60.6",
-    "prettier": "^1.18.2",
-    "ts-jest": "^24.0.2",
-    "tslint": "^5.18.0",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.5.2",
-    "react-native-linear-gradient": "^2.5.6"
-  },
-  "peerDependencies": {
-    "react": "^16.8.6",
-    "react-native": "^0.60.5"
-  }
+   "name": "react-native-emoji-dialog",
+   "version": "2.0.3",
+   "description": "A different dialog approach for React Native. This package provides you a different approach when you display a dialog in your Android & iOS application.",
+   "main": "index.js",
+   "types": "index.d.ts",
+   "scripts": {
+      "build": "tsc",
+      "test": "jest --config jestconfig.json",
+      "lint": "tslint -p tsconfig.json",
+      "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+      "prepare": "npm run build",
+      "prepublishOnly": "npm test && npm run lint",
+      "preversion": "npm run lint",
+      "version": "npm run format && git add -A src",
+      "postversion": "git push && git push --tags"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/bozd4g/react-native-emoji-dialog.git"
+   },
+   "keywords": [
+      "react native",
+      "react native emoji",
+      "native emoji dialog",
+      "android emoji dialog",
+      "ios emoji dialog",
+      "emoji alert"
+   ],
+   "author": {
+      "name": "Furkan Bozdag",
+      "email": "furkan@bozdag.dev",
+      "url": "https://github.com/bozd4g"
+   },
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/bozd4g/react-native-emoji-dialog/issues"
+   },
+   "homepage": "https://github.com/bozd4g/react-native-emoji-dialog#readme",
+   "files": [
+      "*.d.ts",
+      "*.js",
+      "*.js.map",
+      "assets/png/**/*"
+   ],
+   "dependencies": {},
+   "devDependencies": {
+      "jest": "^24.8.0",
+      "@types/jest": "^24.0.15",
+      "@types/react": "^16.9.2",
+      "@types/react-native": "^0.60.6",
+      "prettier": "^1.18.2",
+      "ts-jest": "^24.0.2",
+      "tslint": "^5.18.0",
+      "tslint-config-prettier": "^1.18.0",
+      "typescript": "^3.5.2",
+      "react-native-linear-gradient": "^2.5.6"
+   },
+   "peerDependencies": {
+      "react": "^16.8.6",
+      "react-native": "^0.60.5"
+   }
 }
