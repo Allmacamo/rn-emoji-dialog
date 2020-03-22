@@ -38,7 +38,12 @@ $ react-native link react-native-linear-gradient
 ```
 
 ## Android
-...
+<p align="center">
+  <a href="https://github.com/bozd4g/react-native-emoji-dialog">
+    <img alt="react-native-emoji-dialog" src="/assets/github/android.png" width="300" />
+    <img alt="react-native-emoji-dialog" src="./assets/github/android2.png" width="300" />
+  </a>
+</p>
 
 ## iOS
 Install BVLinearGradient for UIManager as below.
@@ -50,8 +55,8 @@ $ pod install
 
 <p align="center">
   <a href="https://github.com/bozd4g/react-native-emoji-dialog">
-    <img alt="react-native-emoji-dialog" src="/assets/github/ios.png" width="300" style="margin: 0 15px; border-radius: 15px;" />
-    <img alt="react-native-emoji-dialog" src="./assets/github/ios2.png" width="300" style="margin: 0 15px; border-radius: 15px;" />
+    <img alt="react-native-emoji-dialog" src="/assets/github/ios.png" width="300" />
+    <img alt="react-native-emoji-dialog" src="./assets/github/ios2.png" width="300" />
   </a>
 </p>
 
